@@ -13,11 +13,9 @@
    new WebSocket("wss://echo.websocket.org?blocked");
 
    // Iframe, not blocked
-   var f = document.querySelector('#frm');
-   f.addEventListener('load', function() {
-     var WS = f.contentWindow.WebSocket;
-     new WS("wss://echo.websocket.org?frame");
-   });
+   var f = document.getElementById('frm');
+   var WS = f.contentWindow.WebSocket;
+   new WS("wss://echo.websocket.org?frame");
 
    // WebWorker, not blocked
    new Worker(URL.createObjectURL(
