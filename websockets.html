@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<body>
+  <!-- data URI, not blocked -->
+  <iframe style="display:none;" src='data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3E<script>new WebSocket("wss://echo.websocket.org?datauri");</script>%3C/body%3E%3C/html%3E'></iframe>
+
+  <! HTTPS iframe, should be allowed -->
+  <iframe src="https://kzar.co.uk"></iframe>
+  <script>
+   // Blocked
+   new WebSocket("wss://echo.websocket.org?blocked");
+
+   // Iframe, not blocked
+   var f = document.querySelector('#frm');
+   var WS = f.contentWindow.WebSocket;
+   new WS("wss://echo.websocket.org?frame");   
+
+   // WebWorker, not blocked
+   new Worker(URL.createObjectURL(
+     new Blob(['new WebSocket("wss://echo.websocket.org?webworker");'],
+              {type: 'application/javascript'})
+   ));
+
+   // Blob URI, not blocked
+   var frame = document.createElement("iframe");
+   frame.src = URL.createObjectURL(new Blob([""]));
+   frame.addEventListener("load", function(event) {
+     var contentWindow = event.target.contentWindow;
+     new contentWindow.WebSocket("wss://echo.websocket.org?blob");
+   });
+   frame.style = "display: none;";
+   document.body.appendChild(frame);
+   
+
+  </script>
+  <iframe id="frm"></iframe>
+</body>
+</html>
