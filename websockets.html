@@ -6,7 +6,9 @@
   
   <! HTTPS iframe, should be allowed -->
   <iframe style="display:none;" src="https://kzar.co.uk"></iframe>
-  <script>
+  <iframe style="display:none;" id="frm"></iframe>  
+  
+  <script type="text/javascript">
    // Blocked
    new WebSocket("wss://echo.websocket.org?blocked");
 
@@ -33,6 +35,5 @@
    frame.style = "display: none;";
    document.body.appendChild(frame);
   </script>
-  <iframe style="display:none;" id="frm"></iframe>
 </body>
 </html>
