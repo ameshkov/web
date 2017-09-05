@@ -24,7 +24,9 @@
 
         var url = getParameterByName("url");
         // Rick-rolling in case of wrong URL
-        window.location.href = url || "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        setTimeout(function() {
+            window.location.href = url || "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }, 500);
     </script>
 
     <body>
