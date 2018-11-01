@@ -2,3 +2,4 @@
 !
 ||example.org^$replace=/Example/Hello/
 ||example.org^$replace=/Domain/Tester/
+@@||example.org^$replace=/Domain/Tester/
