@@ -1,2 +1,4 @@
+! Title: My Test Filter
+!
 ||example.org^$replace=/Example/Hello/
 ||example.org^$replace=/Domain/Tester/
