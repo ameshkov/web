@@ -1,5 +1,19 @@
 ! Title: My Test Filter
 !
-||example.org^$replace=/Example/Hello/
-||example.org^$replace=/Domain/Tester/
-@@||example.org^$replace=/Domain/Tester/
+! Section where I test different rules
+!
+
+
+!
+! Yandex, I am sick of your scripts
+!
+~radio.yandex.ru,~money.yandex.ru,yandex.ru$$script
+yandex.ru##.media-grid
+yandex.ru##.container__banner
+! Redirect to mail lite interface
+mail.yandex.ru#%#(function() { if (location.pathname === '/') { window.location = '/lite'; } })();
+
+!
+! RBC
+!
+||s.rbk.ru/*/scripts/build/*.js$replace=/e\(".\/repo\/checkad\/main"\)/__x=1/,important
