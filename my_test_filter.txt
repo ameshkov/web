@@ -1,4 +1,6 @@
 ! Title: My Test Filter
+! Version: 1.0
+! URL: https://ameshkov.github.io/web/my_test_filter.txt
 !
 ! Section where I test different rules
 !
