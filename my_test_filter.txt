@@ -11,7 +11,7 @@
 !
 ! Yandex, I am sick of your scripts
 !
-~market.yandex.ru,~radio.yandex.ru,~money.yandex.ru,yandex.ru$$script
+~connect.yandex.ru,~market.yandex.ru,~radio.yandex.ru,~money.yandex.ru,yandex.ru$$script
 yandex.ru##.media-grid
 yandex.ru##.container__banner
 ! Redirect to mail lite interface
