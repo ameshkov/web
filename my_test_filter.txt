@@ -1,6 +1,6 @@
 ! Title: My Test Filter
 ! Testing + some stuff that I'd like to be blocked
-! Version: 1.0
+! Version: 1.1
 ! URL: https://ameshkov.github.io/web/my_test_filter.txt
 ! Src: https://github.com/ameshkov/web/blob/gh-pages/my_test_filter.txt
 !
