@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		window.addEventListener('DOMContentLoaded', function() {
+			var button = document.getElementById('toggle');
+			var testDiv = document.getElementById('testdiv');			
+
+			button.addEventListener('click', function() {
+				if (testDiv.id) {
+					testDiv.removeAttribute('id');
+				} else {
+					testDiv.setAttribute('id', 'testdiv');
+				}
+			})
+		});
+	</script>
+	<style type="text/css">
+		body {
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Arial,sans-serif
+		}
+
+		.testdiv {
+			background-color: red;
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+
+	<ol>
+		<li>
+			This is a test case for <a href="https://github.com/AdguardTeam/ExtendedCss/issues/77">https://github.com/AdguardTeam/ExtendedCss/issues/77</a>
+		</li>
+		<li>
+			Add <code>###testdiv:has(p)</code> to the user filter and refresh the page.
+			The big red div will disappear.
+			Click again, it should disappear back.
+		</li>
+		<li>
+			Click <button id="toggle">this button</button> to change the div style.
+			The big red div should appear back.
+		</li>
+	</ol>
+
+	<div id="testdiv" class="testdiv">
+		<p></p>
+	</div>
+
+</body>
+</html>
