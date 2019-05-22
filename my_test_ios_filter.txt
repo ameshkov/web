@@ -1,6 +1,6 @@
 ! Title: My Test iOS Filter
 ! Testing + some stuff that I'd like to be blocked
-! Version: 1.1
+! Version: 1.2
 ! URL: https://ameshkov.github.io/web/my_test_ios_filter.txt
 ! Src: https://github.com/ameshkov/web/blob/gh-pages/my_test_ios_filter.txt
 
@@ -8,8 +8,10 @@
 example.com##body
 
 !
-! Annoying stuff on vc.ru
+! Annoying stuff on vc.ru and tjournal.ru
 !
-vc.ru##.mobile_hashtags
-vc.ru##.subsite_card_short_with_content
-vc.ru##.club_widgets
+tjournal.ru,vc.ru##.mobile_hashtags
+tjournal.ru,vc.ru##.subsite_card_short_with_content
+tjournal.ru,vc.ru##.club_widgets
+tjournal.ru,vc.ru##.subsites_tune_widget
+tjournal.ru,vc.ru##.andropov_link
