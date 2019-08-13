@@ -1,6 +1,6 @@
 ! Title: My Test iOS Filter
 ! Testing + some stuff that I'd like to be blocked
-! Version: 1.3
+! Version: 1.4
 ! URL: https://ameshkov.github.io/web/my_test_ios_filter.txt
 ! Src: https://github.com/ameshkov/web/blob/gh-pages/my_test_ios_filter.txt
 
@@ -15,6 +15,10 @@ tjournal.ru,vc.ru##.subsite_card_short_with_content
 tjournal.ru,vc.ru##.club_widgets
 tjournal.ru,vc.ru##.subsites_tune_widget
 tjournal.ru,vc.ru##.andropov_link
+tjournal.ru,vc.ru##[air-module="module.ui_tabs"]
+tjournal.ru,vc.ru##.widget_wrapper--type-top_commented_entries
+tjournal.ru,vc.ru##.widget_wrapper--type-popular_3_entries
+tjournal.ru,vc.ru##.head-notifies__badge
 
 !
 ! RBC fix
