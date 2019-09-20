@@ -1,23 +1,10 @@
 ! Title: My Test Filter
 ! Testing + some stuff that I'd like to be blocked
-! Version: 1.7
+! Version: 1.8
 ! URL: https://ameshkov.github.io/web/my_test_filter.txt
 ! Src: https://github.com/ameshkov/web/blob/gh-pages/my_test_filter.txt
 !
 ! Section where I test different rules
 !
 
-
-!
-! Yandex, I am sick of your scripts
-!
-~connect.yandex.ru,~market.yandex.ru,~radio.yandex.ru,~money.yandex.ru,yandex.ru$$script
-yandex.ru##.media-grid
-yandex.ru##.container__banner
-! Redirect to mail lite interface
-mail.yandex.ru#%#(function() { if (location.pathname === '/') { window.location = '/lite'; } })();
-
-!
-! RBC
-!
-||s.rbk.ru/*/scripts/build/*.js$replace=/e\(".\/repo\/checkad\/main"\)/__x=1/,important
+||vignette.wikia.nocookie.net/*/Wiki-background/$important
