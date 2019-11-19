@@ -26,3 +26,9 @@ tjournal.ru,vc.ru##.head-notifies__badge
 rbc.ru##.banners__mobile-freeze
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=rbc.ru
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=rbc.ru
+
+!
+! Testing reddit
+!
+google.com,reddit.com##.XPromoPopup
+google.com,reddit.com##.AppSelectorModal__body
