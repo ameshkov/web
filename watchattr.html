@@ -5,13 +5,25 @@
 	<script type="text/javascript">
 		window.addEventListener('DOMContentLoaded', function() {
 			var button = document.getElementById('toggle');
-			var testDiv = document.getElementById('testdiv');			
+			var button2 = document.getElementById('toggle2');
+			var testDiv = document.getElementById('testdiv');
+			var testDiv2 = document.getElementById('testdiv2');
 
 			button.addEventListener('click', function() {
 				if (testDiv.id) {
 					testDiv.removeAttribute('id');
 				} else {
 					testDiv.setAttribute('id', 'testdiv');
+				}
+			})
+
+			button2.addEventListener('click', function() {
+                var testDiv2p = document.querySelector('#testdiv2>p')
+				if (testDiv2p) {
+					testDiv2p.remove();
+				} else {
+					var pEl = document.createElement('p');
+					testDiv2.appendChild(pEl);
 				}
 			})
 		});
@@ -32,10 +44,10 @@
 
 	<ol>
 		<li>
-			This is a test case for <a href="https://github.com/AdguardTeam/ExtendedCss/issues/77">https://github.com/AdguardTeam/ExtendedCss/issues/77</a>
+			This is attribute test case for <a href="https://github.com/AdguardTeam/ExtendedCss/issues/77">https://github.com/AdguardTeam/ExtendedCss/issues/77</a>
 		</li>
 		<li>
-			Add <code>ameshkov.github.io###testdiv:has(p)</code> to the user filter and refresh the page.
+			Add <code>github.io,localhost###testdiv:watch-attr(id):has(p)</code> to the user filter and refresh the page.
 			The big red div will disappear.
 		</li>
 		<li>
@@ -49,5 +61,26 @@
 		<p></p>
 	</div>
 
+	<ol>
+		<li>
+			This is element test case for <a href="https://github.com/AdguardTeam/ExtendedCss/issues/77">https://github.com/AdguardTeam/ExtendedCss/issues/77</a>
+		</li>
+		<li>
+			Add <code>github.io,localhost###testdiv2:has(p)</code> to the user filter and refresh the page.
+			The big red div will disappear.
+		</li>
+		<li>
+			Click <button id="toggle2">this button</button> to change the div style.
+			The big red div should appear back.
+			Click again, it should disappear back.
+		</li>
+	</ol>
+
+	<div id="testdiv2" class="testdiv">
+		<p></p>
+		<span>should be toggled by button</span>
+	</div>
+
 </body>
 </html>
+
