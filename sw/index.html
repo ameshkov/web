@@ -4,7 +4,7 @@
     <title>Service Worker Test Page</title>
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("service-worker.js").then(function () {
+        navigator.serviceWorker.register("sw.js").then(function () {
           console.log("Service Worker Registered");
         });
       }
