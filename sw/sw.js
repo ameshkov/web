@@ -7,7 +7,7 @@ self.addEventListener('activate', function (event) {
 });
 
 setInterval(function () {
-    fetch('https://ameshkov.github.io/web/sw/')
+    fetch('https://www.cloudflare.com/cdn-cgi/trace')
         .then(response => response.text())
         .then(data => {
             // If you want to do something with the fetched data:
