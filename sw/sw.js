@@ -7,7 +7,7 @@ self.addEventListener('activate', function (event) {
 });
 
 setInterval(function () {
-    fetch(window.location.href)
+    fetch('https://ameshkov.github.io/web/sw/')
         .then(response => response.text())
         .then(data => {
             // If you want to do something with the fetched data:
