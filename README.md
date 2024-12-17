@@ -1,8 +1,5 @@
-# web
+# Web
 
-Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+Random stuff that I make available on the Internet (in the `src`).
 
-* Point 1
-* Point 2
-
-Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+Published to `https://meshkov-demo.pages.dev` and `https://demo.meshkov.info`.

@@ -1,0 +1,11 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Domain with random stuff that I make available on the Internet.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
