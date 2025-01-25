@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Video</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="fullscreenVideo" autoplay controls></video>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const videoUrl = getQueryParam('url');
+        const videoElement = document.getElementById('fullscreenVideo');
+
+        if (videoUrl) {
+            videoElement.src = videoUrl;
+        } else {
+            videoElement.textContent = "No video URL provided in the query parameter.";
+        }
+    </script>
+</body>
+
+</html>
