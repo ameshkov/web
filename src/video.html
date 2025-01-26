@@ -39,6 +39,7 @@
 
         if (videoUrl) {
             videoElement.src = videoUrl;
+            videoElement.play();
         } else {
             videoElement.textContent = "No video URL provided in the query parameter.";
         }
